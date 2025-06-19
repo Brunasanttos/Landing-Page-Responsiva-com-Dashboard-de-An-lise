@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleUp Platform - Soluções para o Crescimento do seu Negócio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Exemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/1d4ed8/ffffff?text=SE" type="image/png">
+
+    <!-- Link para o seu arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-gray-200/50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">
+                [ScaleUp Platform]
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#solucoes" class="text-gray-600 hover:text-blue-700 transition-colors">Soluções</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-blue-700 transition-colors">Benefícios</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-blue-700 transition-colors">Depoimentos</a>
+                <a href="#contato" class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 subtle-shadow">
+                    Pedir Orçamento
+                </a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t border-gray-200">
+            <a href="#solucoes" class="block py-2 text-gray-600 hover:text-blue-700">Soluções</a>
+            <a href="#beneficios" class="block py-2 text-gray-600 hover:text-blue-700">Benefícios</a>
+            <a href="#depoimentos" class="block py-2 text-gray-600 hover:text-blue-700">Depoimentos</a>
+            <a href="#contato" class="block mt-2 text-center bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all">
+                Pedir Orçamento
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="animated-gradient pt-32 pb-20 md:pt-40 md:pb-28">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Transforme sua Empresa com Soluções Inteligentes
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-700">
+                    Aumente sua produtividade, reduza custos e acelere seu crescimento com nossa plataforma completa de gestão empresarial.
+                </p>
+                <div class="mt-10 flex justify-center items-center flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 subtle-shadow w-full sm:w-auto">
+                        Comece Agora
+                    </a>
+                    <a href="#solucoes" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 subtle-shadow w-full sm:w-auto">
+                        Ver Soluções
+                    </a>
+                </div>
+                <div class="mt-12">
+                    <img src="https://placehold.co/900x500/ffffff/d1d5db?text=Dashboard+da+Plataforma" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/900x500/e0f2fe/3b82f6?text=Imagem+do+Produto';"
+                         alt="Dashboard da nossa plataforma de gestão" 
+                         class="mx-auto rounded-xl shadow-2xl border-4 border-white">
+                         <a href= "dashboard.html"class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 subtle-shadow w-full sm:w-auto">
+                            Saiba Mais 
+                        </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de "Problemas" / Dores -->
+        <section id="solucoes" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Sua empresa enfrenta algum destes desafios?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Nós entendemos as dores do mercado e criamos a solução perfeita para superá-las.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card de Problema 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17.25v-4.5m0 4.5h4.5m-4.5 0L6 19.5m3.75-2.25L17.25 9m-4.5 4.5v-4.5m0 4.5h4.5"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Processos Manuais e Lentos</h3>
+                        <p class="text-gray-600">Tarefas repetitivas consomem tempo precioso da sua equipe, que poderia ser usado em atividades estratégicas.</p>
+                    </div>
+                    <!-- Card de Problema 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13.125C3 12.504 3.504 12 4.125 12h15.75c.621 0 1.125.504 1.125 1.125v6.75c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 19.875v-6.75zM12 12.375v-3.75m0 3.75a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Falta de Visão Unificada</h3>
+                        <p class="text-gray-600">Informações espalhadas em planilhas e sistemas diferentes dificultam a tomada de decisões rápidas e assertivas.</p>
+                    </div>
+                    <!-- Card de Problema 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Dificuldade de Acompanhar KPIs</h3>
+                        <p class="text-gray-600">Medir o desempenho real e identificar gargalos se torna uma tarefa complexa sem as ferramentas certas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section id="beneficios" class="py-20 bg-sky-50">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2">
+                         <img src="https://placehold.co/600x450/ffffff/d1d5db?text=Gráficos+e+Resultados" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x450/bae6fd/3b82f6?text=Imagem+de+Benefícios';"
+                              alt="Gráficos mostrando o crescimento e resultados" 
+                              class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">A solução definitiva para o seu negócio</h2>
+                        <p class="mt-4 text-lg text-gray-600">Nossa plataforma centraliza suas operações e oferece insights valiosos para você tomar as melhores decisões.</p>
+                        <ul class="mt-8 space-y-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Automação Inteligente</h4>
+                                    <p class="text-gray-600">Elimine tarefas manuais e foque no que realmente importa: a estratégia do seu negócio.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Dashboards em Tempo Real</h4>
+                                    <p class="text-gray-600">Tenha uma visão clara e atualizada de todos os seus indicadores de desempenho em um só lugar.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Relatórios Personalizados</h4>
+                                    <p class="text-gray-600">Crie relatórios detalhados com poucos cliques e compartilhe com sua equipe facilmente.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Milhares de empresas confiam em nós</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Veja o que alguns de nossos clientes dizem sobre nossa parceria.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Depoimento 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transform transition-transform hover:-translate-y-2 subtle-shadow">
+                        <p class="text-gray-700 mb-6">"A plataforma revolucionou nossa gestão. Ganhamos 40% a mais de produtividade e agora temos clareza total sobre nossos resultados. Indispensável!"</p>
+                        <div class="flex items-center">
+                             <img src="https://placehold.co/48x48/6366f1/ffffff?text=AP" alt="Foto de Ana Paula" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Ana Paula Silva</p>
+                                <p class="text-sm text-gray-500">CEO, InovaTech</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transform transition-transform hover:-translate-y-2 subtle-shadow">
+                        <p class="text-gray-700 mb-6">"O suporte é incrível e a ferramenta é muito intuitiva. Conseguimos integrar todos os departamentos e otimizar nosso fluxo de trabalho em poucas semanas."</p>
+                         <div class="flex items-center">
+                             <img src="https://placehold.co/48x48/ec4899/ffffff?text=CS" alt="Foto de Carlos Souza" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Carlos Souza</p>
+                                <p class="text-sm text-gray-500">Diretor de Operações, LogiMax</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transform transition-transform hover:-translate-y-2 subtle-shadow">
+                        <p class="text-gray-700 mb-6">"Finalmente encontramos uma solução que se adapta ao nosso negócio. Os relatórios personalizados nos dão a visão estratégica que precisávamos para crescer."</p>
+                        <div class="flex items-center">
+                             <img src="https://placehold.co/48x48/f59e0b/ffffff?text=RM" alt="Foto de Ricardo Mendes" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Ricardo Mendes</p>
+                                <p class="text-sm text-gray-500">Gerente Financeiro, BuildCo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Contato / Formulário -->
+        <section id="contato" class="py-20 bg-sky-50">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 lg:flex lg:items-center">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pronto para dar o próximo passo?</h2>
+                        <p class="mt-4 text-lg text-gray-600">Preencha o formulário e um de nossos especialistas entrará em contato para agendar uma demonstração gratuita e sem compromisso.</p>
+                        <div class="mt-8">
+                             <img src="https://placehold.co/500x350/ffffff/d1d5db?text=Equipe+de+Sucesso" 
+                                  onerror="this.onerror=null;this.src='https://placehold.co/500x350/bae6fd/3b82f6?text=Imagem+Contato';"
+                                  alt="Nossa equipe pronta para ajudar" 
+                                  class="rounded-lg shadow-md w-full">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0 lg:pl-12">
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                                <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">E-mail Corporativo</label>
+                                <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700">Nome da Empresa</label>
+                                <input type="text" name="company" id="company" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                             <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensagem (Opcional)</label>
+                                <textarea name="message" id="message" rows="4" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 subtle-shadow">
+                                    Quero uma Demonstração
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção FAQ -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Perguntas Frequentes</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Tire suas principais dúvidas sobre nossa solução.</p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-4" id="faq-container">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="faq-question w-full text-left p-5 flex justify-between items-center text-lg font-semibold hover:bg-gray-50 focus:outline-none">
+                                <span>A plataforma é adequada para pequenas empresas?</span>
+                                <svg class="faq-arrow w-6 h-6 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-gray-600">
+                                Sim! Nossa plataforma é totalmente escalável e foi desenhada para atender desde startups e pequenas empresas até grandes corporações. Oferecemos planos flexíveis que se adaptam ao seu momento e necessidade.
+                            </div>
+                        </div>
+                         <!-- FAQ Item 2 -->
+                        <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="faq-question w-full text-left p-5 flex justify-between items-center text-lg font-semibold hover:bg-gray-50 focus:outline-none">
+                                <span>Como funciona a implantação?</span>
+                                <svg class="faq-arrow w-6 h-6 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-gray-600">
+                                Nossa equipe de especialistas cuida de todo o processo de implantação, desde a migração de dados até o treinamento da sua equipe. Garantimos uma transição suave e rápida para que você comece a ver os resultados o mais breve possível.
+                            </div>
+                        </div>
+                         <!-- FAQ Item 3 -->
+                        <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="faq-question w-full text-left p-5 flex justify-between items-center text-lg font-semibold hover:bg-gray-50 focus:outline-none">
+                                <span>Existe um período de teste gratuito?</span>
+                                <svg class="faq-arrow w-6 h-6 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div class="faq-answer hidden p-5 pt-0 text-gray-600">
+                                Oferecemos uma demonstração guiada gratuita e personalizada, onde um de nossos especialistas apresentará todas as funcionalidades da plataforma e responderá às suas perguntas específicas, mostrando como a ferramenta pode resolver os desafios do seu negócio.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">[Sua Empresa]</h3>
+                    <p class="text-gray-400">Soluções inteligentes para o crescimento do seu negócio.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#solucoes" class="text-gray-400 hover:text-white transition">Soluções</a></li>
+                        <li><a href="#beneficios" class="text-gray-400 hover:text-white transition">Benefícios</a></li>
+                        <li><a href="#depoimentos" class="text-gray-400 hover:text-white transition">Depoimentos</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold mb-4">Siga-nos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M21.5 5.5a2.5 2.5 0 00-2.5-2.5h-14a2.5 2.5 0 00-2.5 2.5v14a2.5 2.5 0 002.5 2.5h14a2.5 2.5 0 002.5-2.5v-14zm-16.5 2a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2zm4 0a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-8a.5.5 0 01-.5-.5v-2zm0 4a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-8a.5.5 0 01-.5-.5v-2zm0 4a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-8a.5.5 0 01-.5-.5v-2zm-4-4a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2zm0 4a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 [Sua Empresa]. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script para FAQ (Accordion)
+        const faqContainer = document.getElementById('faq-container');
+        if (faqContainer) {
+            faqContainer.addEventListener('click', (e) => {
+                const questionButton = e.target.closest('.faq-question');
+                if (!questionButton) return;
+
+                const faqItem = questionButton.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const arrow = questionButton.querySelector('.faq-arrow');
+
+                // Fecha todos os outros itens
+                const allItems = faqContainer.querySelectorAll('.faq-item');
+                allItems.forEach(item => {
+                    if (item !== faqItem) {
+                        item.querySelector('.faq-answer').classList.add('hidden');
+                        item.querySelector('.faq-arrow').classList.remove('rotate-180');
+                    }
+                });
+                
+                // Abre ou fecha o item clicado
+                answer.classList.toggle('hidden');
+                arrow.classList.toggle('rotate-180');
+            });
+        }
+    </script>
+</body>
+</html>

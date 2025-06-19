@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Análise - ScaleUp Platform</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js para os gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Exemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/1d4ed8/ffffff?text=DB" type="image/png">
+
+    <!-- Link para o CSS do Dashboard -->
+    <link rel="stylesheet" href="dashboard_style.css">
+
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <div class="hidden md:flex flex-col w-64 bg-white border-r">
+            <div class="flex items-center justify-center h-16 border-b">
+                <a href="index.html" class="text-2xl font-bold text-blue-700">[ScaleUp Platform]</a>
+            </div>
+            <div class="flex flex-col flex-grow p-4">
+                <nav class="flex-grow space-y-2">
+                    <a href="#" class="flex items-center px-4 py-2 text-white bg-blue-600 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                        Dashboard
+                    </a>
+                    <a href="index.html" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" /></svg>
+                        Ver Landing Page
+                    </a>
+                    <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" /><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" /></svg>
+                        Leads
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="flex flex-col flex-grow overflow-y-auto">
+            <!-- Header do Dashboard -->
+            <header class="flex items-center h-16 px-6 bg-white border-b flex-shrink-0">
+                <h1 class="text-xl font-semibold text-gray-800">Análise da Landing Page</h1>
+                <div class="ml-auto flex items-center space-x-4">
+                    <span class="text-gray-600">Olá, Admin!</span>
+                    <img class="h-10 w-10 rounded-full object-cover" src="https://placehold.co/40x40/6366f1/ffffff?text=A" alt="Foto do Admin">
+                </div>
+            </header>
+            
+            <!-- Main Content -->
+            <main class="flex-grow p-6">
+                <!-- Cards de KPIs -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Total de Visitantes</h3>
+                        <p class="text-3xl font-bold text-gray-800 mt-2">12,450</p>
+                        <p class="text-sm text-green-500 mt-1">+12.5% vs mês anterior</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Leads Gerados</h3>
+                        <p class="text-3xl font-bold text-gray-800 mt-2">872</p>
+                        <p class="text-sm text-green-500 mt-1">+15.2% vs mês anterior</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Taxa de Conversão</h3>
+                        <p class="text-3xl font-bold text-gray-800 mt-2">7.0%</p>
+                        <p class="text-sm text-green-500 mt-1">+0.5% vs mês anterior</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Custo por Lead</h3>
+                        <p class="text-3xl font-bold text-gray-800 mt-2">R$ 22,50</p>
+                        <p class="text-sm text-red-500 mt-1">-3.0% vs mês anterior</p>
+                    </div>
+                </div>
+
+                <!-- Gráficos -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-gray-700">Leads por Período</h3>
+                        <canvas id="leadsChart"></canvas>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-gray-700">Fontes de Tráfego</h3>
+                        <canvas id="trafficChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Tabela de Leads Recentes -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-gray-700 mb-4">Leads Recentes</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="bg-gray-50 border-b">
+                                    <th class="p-4 text-sm font-medium text-gray-500">Nome</th>
+                                    <th class="p-4 text-sm font-medium text-gray-500">Email</th>
+                                    <th class="p-4 text-sm font-medium text-gray-500">Empresa</th>
+                                    <th class="p-4 text-sm font-medium text-gray-500">Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b hover:bg-gray-50">
+                                    <td class="p-4">Ana Paula Silva</td>
+                                    <td class="p-4">ana.silva@inovatech.com</td>
+                                    <td class="p-4">InovaTech</td>
+                                    <td class="p-4">19/06/2024</td>
+                                </tr>
+                                <tr class="border-b hover:bg-gray-50">
+                                    <td class="p-4">Carlos Souza</td>
+                                    <td class="p-4">carlos.souza@logimax.com.br</td>
+                                    <td class="p-4">LogiMax</td>
+                                    <td class="p-4">18/06/2024</td>
+                                </tr>
+                                <tr class="border-b hover:bg-gray-50">
+                                    <td class="p-4">Ricardo Mendes</td>
+                                    <td class="p-4">ricardo@buildco.com</td>
+                                    <td class="p-4">BuildCo</td>
+                                    <td class="p-4">18/06/2024</td>
+                                </tr>
+                                 <tr class="hover:bg-gray-50">
+                                    <td class="p-4">Juliana Ferreira</td>
+                                    <td class="p-4">juliana.f@fastmart.co</td>
+                                    <td class="p-4">FastMart</td>
+                                    <td class="p-4">17/06/2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Dados e configuração para o gráfico de Leads
+        const leadsCtx = document.getElementById('leadsChart').getContext('2d');
+        const leadsChart = new Chart(leadsCtx, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+                datasets: [{
+                    label: 'Leads Gerados',
+                    data: [120, 190, 300, 500, 250, 420],
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Dados e configuração para o gráfico de Fontes de Tráfego
+        const trafficCtx = document.getElementById('trafficChart').getContext('2d');
+        const trafficChart = new Chart(trafficCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Orgânico', 'Pago', 'Direto', 'Referência'],
+                datasets: [{
+                    label: 'Fontes de Tráfego',
+                    data: [45, 25, 20, 10],
+                    backgroundColor: [
+                        'rgba(59, 130, 246, 0.8)',
+                        'rgba(236, 72, 153, 0.8)',
+                        'rgba(245, 158, 11, 0.8)',
+                        'rgba(16, 185, 129, 0.8)',
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
