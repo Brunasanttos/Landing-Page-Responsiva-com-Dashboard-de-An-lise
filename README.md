@@ -1,4 +1,5 @@
 ✨ Funcionalidades
+
 Landing Page (index.html)
 Design Moderno e Responsivo: Totalmente adaptável a desktops, tablets e celulares.
 
@@ -11,6 +12,8 @@ Interatividade: Menu mobile funcional e efeito "accordion" para a seção de FAQ
 Animações Sutis: Efeitos de hover e um fundo com gradiente animado para uma experiência de usuário mais agradável.
 
 Link para o Dashboard: Acesso rápido ao painel de análise diretamente pelo menu.
+
+
 
 Dashboard (dashboard.html)
 Layout Profissional: Estrutura com sidebar de navegação e área de conteúdo principal.
@@ -26,6 +29,8 @@ Gráfico de pizza (doughnut) para mostrar a distribuição das fontes de tráfeg
 Tabela de Leads: Lista com os leads mais recentes capturados pela landing page.
 
 Navegação Integrada: Links para retornar à landing page e para outras seções da plataforma.
+
+
 
 🛠️ Tecnologias Utilizadas
 HTML5: Para a estrutura semântica das páginas.
